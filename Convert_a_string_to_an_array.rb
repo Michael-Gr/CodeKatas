@@ -2,15 +2,19 @@
 # Link to kata: #
 #################
 #
-# https://www.codewars.com/kata/585eaef9851516fcae00004d
+# https://www.codewars.com/kata/57e76bc428d6fbc2d500036d
 #
 ################
 # Description: #
 ################
 #
-# In this kata, you will write a function that receives an array of string and returns a string that is either 'naughty' or 'nice'. Strings that start with the letters b, f, or k are naughty. Strings that start with the letters g, s, or n are nice. Other strings are neither naughty nor nice.
+# Write a function to split a string and convert it into an array of words.
 #
-# If there is an equal amount of bad and good actions, return 'naughty'
+# e.g.
+#
+# string_to_array("Robin Singh") => ["Robin", "Singh"]
+#
+# string_to_array("I love arrays they are my favorite") => ["I", "love", "arrays", "they", "are", "my", "favorite"]
 #
 ###########
 # Answer: #
