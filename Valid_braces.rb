@@ -22,7 +22,7 @@
 # validBraces( "(){}[]" ) => returns true
 # validBraces( "(}" ) => returns false
 # validBraces( "[(])" ) => returns false
-# validBraces( "([{}])" ) => returns true 
+# validBraces( "([{}])" ) => returns true
 #
 ###########
 # Answer: #
