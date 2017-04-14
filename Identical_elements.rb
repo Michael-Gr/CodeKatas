@@ -17,13 +17,9 @@
 ###########
 
 def duplicate_elements(m, n)
-  bool = false
-  m.each do |m_number|
-    n.each do |n_number|
-      if m_number == n_number
-        bool = true
-      end
-    end
+  count = 0
+  m.each do |num|
+    count += 1 if n.include?(num)
   end
-  return bool   # bool: true or false
+  count > 0
 end
