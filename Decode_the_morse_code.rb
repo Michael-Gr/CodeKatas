@@ -34,5 +34,5 @@
 ###########
 
 def decodeMorse(morseCode)
-  morseCode.split("   ").reject {|word| word == ""}.map { |word| word.split(" ").map { |letter| MORSE_CODE[letter] }.join }.join(" ")
+  morseCode.strip.split("   ").map {|word| word.split(" ").map {|letter| MORSE_CODE[letter]}.join}.join(" ")
 end
