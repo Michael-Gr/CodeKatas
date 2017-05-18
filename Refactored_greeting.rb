@@ -21,19 +21,12 @@
 ###########
 
 class Person
-
-  attr_accessor :name
-
+  attr_reader :name
   def initialize(name)
-    @myname = name
-  end
-
-  def name
-    @myname
+    @name = name
   end
 
   def greet(yourName)
-    "Hello #{yourName}, my name is #{@myname}"
+    "Hello #{yourName}, my name is #{@name}"
   end
-
 end
