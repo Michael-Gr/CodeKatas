@@ -25,3 +25,9 @@
 def XO(str)
   str.downcase.count("x") == str.downcase.count("o") ? true : false
 end
+
+# Refactor
+
+def XO(str)
+  str.downcase.count("x") == str.downcase.count("o")
+end
