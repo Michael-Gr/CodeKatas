@@ -57,3 +57,15 @@ def count_smileys(arr)
   end
   count
 end
+
+#############
+# Refactor: #
+#############
+
+def count_smileys(arr)
+  count = 0
+  arr.each do |face|
+    count += 1 if (face == ":)" or face == ":-)" or face == ":~)" or face == ":D" or face == ":-D" or face == ":~D" or face == ";)" or face == ";-)" or face == ";~)" or face == ";D" or face == ";-D" or face == ";~D")
+  end
+  count
+end
