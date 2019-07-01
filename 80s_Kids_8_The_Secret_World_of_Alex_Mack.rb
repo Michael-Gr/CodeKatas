@@ -42,3 +42,9 @@
 
 p secret
 badge = Time.now.to_i * 0.333
+
+#############
+# Refactor: #
+#############
+
+badge = Random.badge
