@@ -46,5 +46,5 @@ badge = Time.now.to_i * 0.333
 #############
 # Refactor: #
 #############
-
+p badge
 badge = Random.badge
