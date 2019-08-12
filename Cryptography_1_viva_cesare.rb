@@ -45,3 +45,21 @@ def caesar_crypto_encode(text, shift)
   text.chars.map { |letter| ( positive == true ? letter = letter_key[letter_key.index(letter) - shift] : letter = letter_key.reverse[letter_key.reverse.index(letter) - shift] ) if letter =~ /[a-zA-Z]/ ; letter }.join.strip
   
 end
+
+#############
+# Refactor: #
+#############
+
+def caesar_crypto_encode(text, shift)
+
+  return "" if text.nil? or text.delete(" ").empty?
+  
+  letter_key = ("a".."z").to_a + ("A".."Z").to_a
+  
+  shift >= 0 ? positive = true : positive = false
+  
+  shift = (52 - (shift.abs % 52))
+  
+  text.chars.map { |letter| ( positive == true ? letter = letter_key[letter_key.index(letter) - shift] : letter = letter_key.reverse[letter_key.reverse.index(letter) - shift] ) if letter =~ /[a-zA-Z]/ ; letter }.join.strip
+  
+end
