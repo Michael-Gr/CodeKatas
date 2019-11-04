@@ -25,3 +25,11 @@ def invert(list)
     n < 0 ? n.to_s.gsub('-', '').to_i : ("-" + n.to_s).to_i
   end
 end
+
+#############
+# Refactor: #
+#############
+
+def invert(list)
+  list.empty? ? [] : list.map { |num| num * -1 }
+end
