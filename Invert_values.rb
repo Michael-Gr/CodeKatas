@@ -33,3 +33,11 @@ end
 def invert(list)
   list.empty? ? [] : list.map { |num| num * -1 }
 end
+
+#############
+# Refactor: #
+#############
+
+def invert(list)
+  list.map(&:-@)
+end
