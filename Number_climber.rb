@@ -15,6 +15,20 @@
 ###########
 
 def climb(n)
+  answer = Array.new
+  answer << n
+  while n > 1 do
+    answer << (n/2)
+    n = (n/2)
+  end
+  answer.reverse
+end
+
+#############
+# Refactor: #
+#############
+
+def climb(n)
   answer = [n]
   while n > 1 do
     answer << (n/2)
