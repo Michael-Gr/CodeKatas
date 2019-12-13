@@ -21,3 +21,11 @@
 def no_odds(values)
   values.select { |num| num.even? }
 end
+
+#############
+# Refactor: #
+#############
+
+def no_odds( values )
+  values.keep_if { |num| num.even? }
+end
